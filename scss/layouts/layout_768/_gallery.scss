@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+   margin-right: rem(22px);
+   padding-left: rem(20px);
+   height: rem(490px);
+   &:nth-of-type(2n) {
+       margin-right: 0;
+   }
+   flex-basis: 45%;
+   @include e(photo) {
+    height: rem(290px);
+   }
+    @include e(image) {
+        
+       height: rem(300px);
+       max-width: rem(280px);
+    }
+    @include e(purchase) {
+        
+    
+    }
+    @include e(price) {
+        
+    }
+    @include e(button) {
+        top: -10px;
+        left: 40px;
+
+    }
+
+}
+.product-card {
+    
+    @include e(title) {
+        font-size: rem(45px);
+    }
+@include e(text) {
+    
+}
+@include e(description) {
+    padding-right: rem(40px);
+}
+}

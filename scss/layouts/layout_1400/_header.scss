@@ -1,0 +1,22 @@
+.header {
+    background: rgba(43, 40, 53, 0.6);
+    justify-content: space-evenly;
+  @include e(logo) {
+      margin-left: -30rem;
+    
+      
+  }
+  @include e(burger) {
+    display: none;
+  }
+}
+.menu {
+    
+  @include e(list-item) {
+  }
+  @include e(list) {
+  }
+
+  @include e(menu__image) {
+  }
+}

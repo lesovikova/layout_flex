@@ -1,0 +1,109 @@
+@function asset($type, $file) {
+  @if $type == image {
+    @return url($imagesPath + $file);
+  } @else if $type == font {
+    @return url($fontsPath + $file);
+  } @else if $type == userfile {
+    @return url($usersFilesPath + $file);
+  }
+}
+
+@function em($target, $current: $baseFontSize) {
+  @return ($target / $current) * 1em;
+}
+
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &_#{$modifier} {
+    @content;
+  }
+}
+
+@mixin mq($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin font($f, $s, $w: "") {
+  font: #{$w} $s $f;
+}
+
+// Mine
+
+@mixin img-fluid {
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@mixin section1-title($black) {
+  margin: 0;
+  padding: 0;
+  font-weight: $mediumFontWeight;
+  font-size: rem(16px);
+  letter-spacing: 1px;
+  color: $black;
+}
+@mixin section1-slogan {
+  margin: 0;
+  padding: 0;
+  font-weight: $boldFontWeight;
+  font-size: rem(32px);
+  line-height: rem(35px);
+}
+
+@mixin button-buy ($color: $black){
+border-radius: 100px;
+border: none;
+font-size: $baseFontSize;
+font-weight: $semiboldFontWeight;
+color: $black;
+padding: 9px 35px;
+background-color: $color;
+text-transform: uppercase;
+}
+
+@mixin section1-price {
+  font-weight: $regularFontWeight;
+  font-size: rem(32px);
+  margin: 0;
+}
+@mixin section1-description ($color: $black){
+  font-size: rem(13px);
+  line-height: rem(17.6px);
+  color: $color;
+  font-weight: $mediumFontWeight;
+}
+@mixin card-title {
+        font-size: rem(40px);
+        font-weight: $mediumFontWeight;
+        line-height: rem(55px);
+        color: $notBlackText;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+}
+@mixin card-text {
+  font-size: rem(14px);
+  line-height: rem(21px);
+  color: $cardText;
+  text-align: left;
+  font-weight: $regularFontWeight;
+  margin: 0;
+  padding: 0;
+}
+@mixin card-price {
+  color: $priceColor;
+  font-weight: $semiboldFontWeight;
+  font-size: rem(25px);
+  text-align: left;
+}

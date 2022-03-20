@@ -1,0 +1,45 @@
+.gallery {
+    padding-left: rem(15px);
+    padding-right: rem(14px);
+}
+.product {
+    margin-bottom: rem(15px);
+    background-color: $cardBG;
+    height: rem(560px);
+    text-align: center;
+    @include e(photo) {
+        width: 100%;
+        height: 360px;
+    }
+
+    @include e(image) {
+        // object-fit: cover;
+        max-width: 100%;
+        
+    }
+    @include e(purchase) {
+    margin-left: rem(25px);
+    margin-right: rem(45px);
+    
+    }
+    @include e(price) {
+        @include card-price;
+    }
+    @include e(button) {
+        @include button-buy;
+        color: $white;
+        position: relative;
+        top: -3px;
+    }
+
+}
+.product-card {
+    margin-left: rem(25px);
+    margin-right: rem(45px);
+    @include e(title) {
+        @include card-title;
+    }
+@include e(text) {
+    @include card-text;
+}
+}

@@ -1,0 +1,25 @@
+.form {
+    
+
+    @include e(title) {
+        font-size: rem(50px);
+    }
+    @include e(description) {
+        
+    }
+}
+.form-area {
+    
+    
+    @include e(for-email) {
+        width: rem(463px);
+    }
+    @include e(submit) {
+        display: block;
+        margin: auto;
+        padding: 12px 223px;
+        margin-bottom: 51px;
+
+    
+    }
+}

@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    @include e(logo) {
+        margin-left: auto;
+    }
+    @include e(logo-img) {
+        
+    }
+}
+.footer-menu {
+    
+    @include e(company) {
+        list-style: none;
+        display: initial;
+    }
+    @include e(support) {
+        list-style: none;
+        display: initial;
+    }
+    @include e(menu) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include e(subtitle) {
+        border: none;
+        width: 25%;        
+        padding-top: rem(34px);
+        &:first-of-type {
+            padding-top: rem(34px);
+        }
+        @include m(social) {
+            
+        }
+    }
+    @include e(subtitle-link){
+        
+    }
+    @include e(products) {
+    }
+    @include e(link) {
+        
+    }
+    @include e(social) {
+        
+    }
+}
+.social {
+    @include e(logo) {
+        margin-top: 40px;
+    }
+}

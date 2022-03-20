@@ -1,0 +1,93 @@
+.first-section {
+  margin-top: rem(78px);
+  @include e(background) {
+    height: rem(530px);
+  }
+
+  @include e(photo) {
+    @include m(second) {
+      width: 661px;
+      margin-left: 49px;
+    }
+    @include m(fourth) {
+      margin-top: -55px;
+    }
+  }
+  @include e(image) {
+    @include m(second) {
+      margin-bottom: -50px;
+    }
+    @include m(third) {
+      height: 700px;
+    }
+    @include m(fourth) {
+      height: 690px;
+    }
+  }
+}
+
+.card-description {
+  text-align: left;
+  padding-left: rem(53px);
+  padding-right: rem(210px);
+  @include m(padding) {
+  }
+
+  @include e(slogan) {
+    font-size: rem(40px);
+    @include m(second) {
+      font-size: rem(50px);
+    }
+  }
+  @include e(button) {
+    right: auto;
+    bottom: 5px;
+    left: 165px;
+    padding: 12px 48px;
+    @include m(second) {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  @include e(price) {
+    font-size: rem(40px);
+    margin-top: rem(40px);
+  }
+
+  @include e(name) {
+    font-size: rem(50px);
+    @include m(fourth) {
+    }
+  }
+}
+
+.color-picker {
+  @include e(title) {
+    font-size: rem(40px);
+  }
+  @include e(description) {
+    margin-bottom: rem(19px);
+  }
+}
+
+.banner-product {
+  @include e(dots) {
+    display: initial;
+    margin-bottom: 50px;
+  }
+  &:first-of-type {
+    margin-bottom: -75px;
+  }
+  &:nth-of-type(2) {
+    margin-bottom: rem(57px);
+  }
+  @include m(third) {
+    background: $logoColor url(../../../i/img/lines2.png) no-repeat;
+    margin-bottom: 51px;
+  }
+  @include m(fourth) {
+    padding-bottom: rem(38px);
+    margin-bottom: rem(27px);
+  }
+}

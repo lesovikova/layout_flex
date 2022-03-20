@@ -1,0 +1,47 @@
+.gallery {
+    max-width: 1500px;
+    margin: auto;
+}
+.product {
+    margin-right: rem(22px);
+   flex-basis: 393px;
+   height: rem(560px);
+   &:nth-of-type(2n) {
+    margin-right: rem(22px);
+       
+}
+   @include e(photo) {
+       height: rem(340px);
+       padding: rem(10px);
+   }
+    @include e(image) {
+        
+       height: rem(350px);
+       max-width: rem(290px);
+        
+    }
+    @include e(purchase) {
+        
+    
+    }
+    @include e(price) {
+        
+    }
+    @include e(button) {
+        top: -5px;
+
+    }
+
+}
+.product-card {
+    
+    @include e(title) {
+        
+    }
+@include e(text) {
+    
+}
+@include e(description) {
+    
+}
+}

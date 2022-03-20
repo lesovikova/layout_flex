@@ -1,0 +1,196 @@
+.first-section {
+  margin-top: rem(57px);
+  text-align: center;
+  position: relative;
+
+  @include e(photo) {
+      @include m(first) {
+          margin-left: 12%;
+      }
+  }
+  @include e(image) {
+    @include img-fluid;
+        object-fit: contain;
+        
+    @include m(third) {
+        object-fit: contain;
+        height: rem(320px)
+    }
+    @include m(fourth) {
+        height: rem(480px);
+        object-fit: contain;
+    }
+  }
+
+  @include e(background) {
+    display: block;
+    width: 100%;
+    height: rem(151px);
+    background: $headerBG;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+}
+
+.card-description {
+  text-align: left;
+  padding-left: rem(19px);
+  padding-right: rem(61px);
+  @include m(padding) {
+      padding-right: rem(25px)
+  }
+
+  @include e(title) {
+    @include section1-title($black);
+    margin-bottom: rem(7px);
+  }
+  @include e(slogan) {
+    @include section1-slogan;
+    @include m(color) {
+        color: $notBlackText;
+        margin-top: rem(10px);
+    }
+  }
+
+  @include e(button) {
+    position: absolute;
+    @include button-buy($logoColor);
+    right: 19px;
+    bottom: 0;
+    @include m(not-orange) {
+        background-color: $black;
+        color: $white;
+        bottom: 0;
+        right: 53px;
+
+    }
+
+
+  }
+  @include e(price) {
+    @include section1-price;
+    margin-top: rem(22px);
+      position: relative;
+    
+  }
+  @include e(description) {
+    @include section1-description;
+    
+    @include m(third) {
+        padding-bottom: rem(35px);
+        color: $white;
+    }
+    @include m(fourth) {
+        color: #6A6A6A;
+        padding-bottom: rem(55px);
+    }
+  }
+
+  @include e(short-slogan) {
+      font-size: rem(16px);
+      color: $notBlackText;
+      font-weight: $regularFontWeight;
+      margin: 0;
+      padding: 0;
+    
+  }
+  @include e(name) {
+      font-size: rem(32px);
+      font-weight: $boldFontWeight;
+      
+      color: $notBlackText;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      @include m(fourth) {
+          line-height: rem(55px);
+      }
+  }
+  @include e(list) {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include m(third) {
+          margin-top: rem(14px);
+      }
+  }
+  @include e(list-item) {
+      color: #030303;
+      font-size: rem(14px);
+      line-height: rem(27px);
+      font-weight: $regularFontWeight;
+  }
+}
+.color-picker {
+    margin: 0;
+    padding: 0;
+
+    @include e(title) {      
+        margin: 1rem 0;
+        font-size: rem(32px);
+        line-height: rem(55px);
+        color: $notBlackText;
+        font-weight: $regularFontWeight;
+    }
+    @include e(description) {
+        margin: 0;
+        font-size: rem(16px);
+        color: $notBlackText;
+    }
+    @include e(form) {
+        display: flex;
+
+    }
+    @include e(input) {
+        -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+        display: block;
+        height: rem(37px);
+        width: rem(37px);
+        border: 1px solid #EAEAEA;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.135817);
+        position: relative;
+        @include m(first) {
+            background-color: $white;
+        }
+        @include m(second) {
+background-color: #DD5656;
+margin: 0 14px;
+        }
+        @include m(third) {
+            background-color: $black;
+        }
+    
+    &:checked::before{
+        content: "";
+        position: absolute;
+        border: 1px solid $black;
+        border-radius: 50%;        
+        height: rem(46px);
+        width: rem(46px);
+        top: -6px;
+        left: -6px;
+      }
+    }
+}
+.banner-product {
+    margin: 0;
+    padding: 0;
+    @include e(dots) {
+        display: none;
+    }
+    &:first-of-type {
+        margin-bottom: -35px;
+    }
+    @include m(third) {
+        background: $logoColor url(../../../i/img/bg_lines.png);
+        
+    }
+    @include m(fourth) {
+        background-color: #F4F4F4;
+    }
+}

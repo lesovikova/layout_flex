@@ -1,0 +1,21 @@
+.form {
+    
+
+    @include e(title) {
+        
+    }
+    @include e(description) {
+        
+    }
+}
+.form-area {
+    
+    @include e(for-email) {
+        
+    }
+    @include e(submit) {
+        
+
+    
+    }
+}

@@ -1,0 +1,113 @@
+.first-section {
+  margin-top: 0;
+ @include e(background) {
+     
+    height: rem(616px);
+      }
+  
+  @include e(photo) {
+      width: 100%;
+      
+      margin: 0;
+      padding: 0;
+    @include m(second) {
+        order: 2;
+        flex-basis: 50%;
+        margin-right: 30px;
+    }
+    @include m(fourth) {
+        order: 2;
+        
+    }
+  }
+  @include e(image) {
+      @include m(first) {
+          width: 120%;
+          
+      }
+      @include m (second) {
+          margin-bottom: -100px;
+      }
+      @include m(fourth) {
+          
+      }
+  }
+ }
+
+.card-description {
+    flex-basis: 65%;
+    color: $white;
+    padding-left: rem(100px);
+    padding-right: 0;
+    @include m(first) {
+        margin-bottom: 30%;
+    }
+    @include e(title) {
+        
+        @include m(white) {
+            color: $white;
+        }        
+    }
+    @include e(description) {
+        @include m(orange) {
+            color: $logoColor;
+        }
+    }
+  @include m(padding) {
+      
+  }
+ 
+  @include e(slogan) {
+      
+    @include m(second) {
+        
+    }
+  }
+  @include e(button) {
+      
+    @include m(second) {
+        
+    }
+    }
+  
+
+  @include e(price) {
+      color: $black;
+      @include m(first) {
+          color: $white;
+      }
+        
+  }
+  
+  @include e(name) {
+      
+      @include m(fourth) {
+      }
+  }
+  
+}
+
+.color-picker {
+    
+    @include e(title) {      
+        
+    }
+    @include e(description) {
+        
+    }
+     
+}
+
+.banner-product {
+    display: flex;
+    align-items: center;
+    @include e(dots) {
+        margin-bottom: 0;
+    }
+    @include m(third) {
+        margin-bottom: 0;
+    }
+    @include m(fourth) {
+        
+    }
+}

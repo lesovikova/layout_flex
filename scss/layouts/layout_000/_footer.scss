@@ -1,0 +1,82 @@
+.footer {
+    background-color: $headerBG;
+    padding: 1px 0;
+    @include e(logo) {
+        text-align: center;
+        margin-top: rem(30px);
+    }
+    @include e(logo-img) {
+        width: rem(50px);
+        height: rem(50px);
+    }
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+@include e(company) {
+    display: none;
+}
+@include e(support) {
+    display: none;
+}
+
+    @include e(menu) {
+        list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    @include e(subtitle) {
+        font-weight: $semiboldFontWeight;
+        font-size: rem(18px);
+        color: $white;
+        padding-top: 6px;
+        padding-left: rem(26px);
+        padding-bottom: rem(13px);
+        border-top: 0.5px solid $black;
+        
+        &:first-of-type {
+            border: none;
+            padding-top: 0;
+        }
+        &:last-of-type {
+            padding-top: 15px;
+        }
+    }
+    @include e(subtitle-link){
+                text-decoration: none;
+                color: $white;
+    }
+    @include e(products) {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: rem(25px);
+    }
+    @include e(link) {
+        color: #B8B8B8;
+        font-size: rem(12px);
+        font-weight: $semiboldFontWeight;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    @include e(social) {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: rem(34px);
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.social {
+    @include e(logo) {
+        margin-top: 14px;
+    }
+}
+.copyright {
+    @include e(text) {
+        display: none;
+    } 
+}

@@ -1,0 +1,62 @@
+.footer {
+    
+    justify-content: space-around;
+    margin-bottom: -40px;
+    @include e(logo) {
+        margin-left: 0;
+        flex-basis: 15%;
+        margin-top: rem(60px);
+
+    }
+    @include e(logo-img) {
+        
+    }
+}
+.footer-menu {
+        flex-basis: 80%;
+        margin-bottom: rem(75px);
+    @include e(company) {
+        
+    }
+    @include e(support) {
+        
+    }
+    @include e(menu) {
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    @include e(subtitle) {
+        padding-top: rem(60px);
+        
+        &:last-of-type {
+            padding-top: rem(60px);
+        }
+        &:first-of-type {
+            padding-top: rem(60px);
+        }
+        @include m(social) {
+            
+        }
+    }
+    @include e(subtitle-link){
+        
+    }
+    @include e(products) {
+    }
+    @include e(link) {
+        
+    }
+    @include e(social) {
+        
+    }
+}
+.copyright {
+    text-align: center;
+    @include e(text) {
+        
+    font-size: rem(12px);
+    font-weight: $mediumFontWeight;
+    color: $white;
+    display: initial;
+    }
+}

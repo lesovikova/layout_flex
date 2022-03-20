@@ -1,0 +1,45 @@
+.form {
+    background-color: $cardBG;
+    text-align: center;
+    margin-left: rem(15px);
+    margin-right: rem(14px);
+    margin-bottom: rem(47px);
+    padding: 1px 0;
+
+    @include e(title) {
+        color: $notBlackText;
+        font-size: rem(32px);
+        line-height: rem(55px);
+        font-weight: $boldFontWeight;
+        margin: 0;
+        margin-top: rem(39px);
+        margin-bottom: rem(11px);
+    }
+    @include e(description) {
+        font-size: rem(14px);
+        font-weight: $regularFontWeight;
+        color: $cardText;
+        margin: 0;
+        margin-bottom: rem(30px);
+    }
+}
+.form-area {
+    @include e(for-email) {
+        margin-bottom: rem(19px);
+        padding: 0 22px;
+        width: rem(254px);
+        height: rem(36px);
+        border: 1px solid #BFBFBF;
+        border-radius: 18px;
+        background-color: $cardBG;
+    }
+    @include e(submit) {
+        
+    @include button-buy ($logoColor);
+padding-top: rem(12px);
+padding-bottom: rem(12px);
+padding-left: rem(118px);
+padding-right: rem(118px);
+margin-bottom: rem(64px);
+    }
+}

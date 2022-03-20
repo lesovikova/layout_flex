@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__logo">
+        <img src="i/icons/logo.svg" alt="" class="logo__image" />
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__link" href="#"
+              ><img class="menu__image" src="i/icons/search.svg" alt=""
+            /></a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#"
+              ><img class="menu__image" src="i/icons/user.svg" alt=""
+            /></a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__link" href="#"
+              ><img class="menu__image" src="i/icons/buy.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__burger">
+        <img src="i/icons/burger.svg" alt="" class="burger__item" />
+      </div>
+    </header>
+    <!-- SECTION 1 -->
+    <section class="first-section">
+      <!-- FIRST -->
+      <article class="banner-product">
+        <div class="first-section__photo first-section__photo_first">
+          <img
+            class="first-section__image first-section__image_first"
+            src="i/img/banner_img.png"
+          />
+        </div>
+        <div class="first-section__background"></div>
+        <div class="card-description card-description_first">
+          <h2 class="card-description__title card-description__title_white">
+            Beats Studio3 Wireless
+          </h2>
+          <p class="card-description__slogan">
+            Experience your music like never before.
+          </p>
+
+          <p class="card-description__price card-description__price_first">
+            $299.95<button class="card-description__button">buy now</button>
+          </p>
+          <p
+            class="
+              card-description__description card-description__description_orange
+            "
+          >
+            $60 Apple Music gift card with purchase of select Beats products.*
+          </p>
+        </div>
+      </article>
+      <!-- SECOND -->
+      <article class="banner-product">
+        <div class="first-section__photo first-section__photo_second">
+          <img
+            class="first-section__image first-section__image_position first-section__image_second"
+            src="i/img/item1.png"
+            
+          />
+          <svg class="banner-product__dots" xmlns="http://www.w3.org/2000/svg" width="55px" height="30px">
+            <circle r="3" cy="10" cx="10" fill="$black"/>
+            <circle r="3" cy="10" cx="25" fill="#D1D1D1"/>
+            <circle r="3" cy="10" cx="40" fill="#D1D1D1"/>
+          </svg>
+        </div>
+        <div class="card-description">
+          <h2 class="card-description__title">Portable Wireless Speaker</h2>
+          <p
+            class="
+              card-description__slogan
+              card-description__slogan_color
+              card-description__slogan_second
+            "
+          >
+            Beats Pill <sup>+</sup>
+          </p>
+          <div class="color-picker">
+            <h2 class="color-picker__title">Available Colors</h2>
+            <p class="color-picker__description">Find your Color</p>
+            <form action="" class="color-picker__form">
+              <label for="white">
+                <input
+                  class="color-picker__input color-picker__input_first"
+                  type="radio"
+                  name="color"
+                  id="white"
+                  checked
+                />
+              </label>
+              <label for="red">
+                <input
+                  class="color-picker__input color-picker__input_second"
+                  type="radio"
+                  name="color"
+                  id="red"
+                />
+              </label>
+              <label for="black">
+                <input
+                  class="color-picker__input color-picker__input_third"
+                  type="radio"
+                  name="color"
+                  id="black"
+                />
+              </label>
+            </form>
+          </div>
+          <p class="card-description__price">
+            $299.95
+            <button
+              class="card-description__button card-description__button_second"
+            >
+              buy now
+            </button>
+          </p>
+          <p class="card-description__description">
+            $60 Apple Music gift card with purchase of select Beats products.*
+          </p>
+        </div>
+      </article>
+      <!-- THIRD -->
+      <article class="banner-product banner-product_third">
+        <div class="first-section__photo first-section__photo_third">
+          <img
+            class="first-section__image first-section__image_third"
+            src="i/img/item2.png"
+          />
+        </div>
+
+        <div class="card-description card-description_padding">
+          <h2 class="card-description__short-slogan">
+            Totally wireless high-performance earphones
+          </h2>
+          <p class="card-description__name">Powerbeats Pro</p>
+          <ul class="card-description__list card-description__list_third">
+            <li class="card-description__list-item">
+              Up to 9 hours of listening time
+            </li>
+            <li class="card-description__list-item">
+              Apple H1 Chip & Class 1 Wireless Bluetooth<sup>&#xAE;</sup>
+            </li>
+            <li class="card-description__list-item">Sweat & water resistant</li>
+            <li class="card-description__list-item">
+              Adjustable, secure-fit earhooks
+            </li>
+          </ul>
+          <p class="card-description__price">
+            $299.95
+            <button
+              class="
+                card-description__button card-description__button_not-orange
+              "
+            >
+              buy now
+            </button>
+          </p>
+          <p
+            class="
+              card-description__description card-description__description_third
+            "
+          >
+            $60 Apple Music gift card with purchase of select Beats products.*
+          </p>
+        </div>
+      </article>
+      <!-- FOURTH -->
+      <article class="banner-product banner-product_fourth">
+        <div class="first-section__photo first-section__photo_fourth">
+          <img
+            class="first-section__image first-section__image_fourth"
+            src="i/img/item3.png"
+            alt=""
+            class="first-section__image"
+          />
+        </div>
+
+        <div class="card-description card-description_padding">
+          <h2 class="card-description__short-slogan">Talk. Listen. Beats.</h2>
+          <p class="card-description__name card-description__name_fourth">
+            Beatsˣ
+          </p>
+          <ul class="card-description__list">
+            <li class="card-description__list-item">
+              Up to 8 hours of battery life
+            </li>
+            <li class="card-description__list-item">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </li>
+            <li class="card-description__list-item">Sweat & water resistant</li>
+            <li class="card-description__list-item">
+              Apple W1 Chip & Class 1 Wireless Bluetooth<sup>&#xAE;</sup>
+            </li>
+          </ul>
+          <p class="card-description__price">
+            $299.95
+            <button
+              class="
+                card-description__button card-description__button_not-orange
+              "
+            >
+              buy now
+            </button>
+          </p>
+          <p
+            class="
+              card-description__description card-description__description_fourth
+            "
+          >
+            $60 Apple Music gift card with purchase of select Beats products.*
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 2  -->
+    <!-- first -->
+    <section class="gallery">
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item4.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+      <!-- second -->
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item5.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+      <!-- third -->
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item6.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+      <!-- fourth -->
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item7.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+      <!-- fifth -->
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item8.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+      <!-- sixth -->
+      <article class="product">
+        <div class="product__photo">
+          <img src="i/img/item9.png" alt="" class="product__image" />
+        </div>
+        <div class="product-card">
+          <h2 class="product-card__title">Beatsˣ</h2>
+          <div class="product-card__description">
+            <p class="product-card__text">Up to 8 hours of battery life</p>
+            <p class="product-card__text">
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </p>
+          </div>
+        </div>
+        <div class="product__purchase">
+          <p class="product__price">
+            $299.95
+            <button class="product__button">buy now</button>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION FORM -->
+    <section class="form">
+      <h2 class="form__title">Hear it first</h2>
+      <p class="form__description">
+        Get updates on product drops, collaborations and all things Beats.
+      </p>
+      <form action="" class="form-area">
+        <input
+          type="text"
+          class="form-area__for-email"
+          placeholder="Enter your email"
+        />
+        <input type="submit" value="sign up" class="form-area__submit" />
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/i/icons/logo.svg" alt="" class="footer__logo-img" />
+      </div>
+      <nav class="footer-menu">
+        <ul class="footer-menu__menu">
+          <li class="footer-menu__subtitle">
+            <a href="#" class="footer-menu__subtitle-link">Products</a>
+            <ul class="footer-menu__products">
+              <li class="products__item">
+                <a href="" class="footer-menu__link">earphones</a>
+              </li>
+              <li class="products__item">
+                <a href="" class="footer-menu__link">speakers</a>
+              </li>
+              <li class="products__item">
+                <a href="" class="footer-menu__link">accessories</a>
+              </li>
+              <li class="products__item">
+                <a href="" class="footer-menu__link">collaborations</a>
+              </li>
+              <li class="products__item">
+                <a href="" class="footer-menu__link">beatsaudio</a>
+              </li>
+              <li class="products__item">
+                <a href="" class="footer-menu__link">special offers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-menu__subtitle">
+            <a href="#" class="footer-menu__subtitle-link">Support</a>
+
+            <ul class="footer-menu__support">
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">Product help</a>
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">Service & warranty</a>
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">Register your beats</a>
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">Update your beats</a>
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link"
+                  >Authorized service providers</a
+                >
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">Contact support</a>
+              </li>
+              <li class="support__item">
+                <a href="#" class="footer-menu__link">International numbers</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-menu__subtitle">
+            <a href="#" class="footer-menu__subtitle-link">Company</a>
+            <ul class="footer-menu__company">
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">Product help</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">news and events</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">promotion terms</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">privacy policy</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">trademark</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">terms of use</a>
+              </li>
+              <li class="company__item">
+                <a href="#" class="footer-menu__link">cookies</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-menu__subtitle footer-menu__subtitle_social">
+            Follow us
+            <ul class="footer-menu__social">
+              <li class="social__item">
+                <a href="#" class="social__link"
+                  ><img src="i/icons/Bitmap.png" alt="" class="social__logo"
+                /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <div class="copyright">
+      <p class="copyright__text">Copyright © 2020 Apple Inc. - All rights reserved.</p>
+    </div>
+  </body>
+</html>
